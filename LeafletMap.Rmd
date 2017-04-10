@@ -1,0 +1,20 @@
+---
+title: "Leaflet Map"
+author: "Jennifer Fadimba"
+date: "April 9, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE)
+```
+
+## Map with Statue of Liberty Marker
+
+Below is a map made using Leaflet:
+
+```{r}
+library (leaflet)
+new_map <- leaflet () %>% addTiles()%>%addMarkers(lng = -74.0445, lat = 40.6892, popup = "The Statue of Liberty")
+```
+
